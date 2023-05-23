@@ -350,9 +350,9 @@
                                 </div>
                             </div>
 
-                            <div class="m-t-20">
-<script type="application/x-component" data-component="paypal-button">
-    {
+                            <div class="m-t-20" id="paypal-button-container">
+<script>
+    paypal.Button.render({
         // Configure environment
         env: 'production',
         client: {
@@ -454,7 +454,7 @@
 
             });
         }
-    }
+    }, "#paypal-button-container");
 
 </script>
                             </div>
